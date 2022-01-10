@@ -9,4 +9,8 @@ export default function middleware(req) {
     if(token && url == '/login'){
         return NextResponse.redirect('/dashboard')
     }
+
+    if(url == '/test'){
+        return NextResponse.rewrite('/notfound')
+    }
 }
