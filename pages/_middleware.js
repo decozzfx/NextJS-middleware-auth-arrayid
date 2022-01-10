@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-export default function(req) {
+export default function middleware(req) {
     const {token} = req.cookies
     const url = req.url
     // console.info(req)
